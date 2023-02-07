@@ -134,7 +134,7 @@ background-color: rgb(223, 107, 107);
 height: 100%;
    
   }
-  /* grid id's should be moved within media query tags
+  /* grid id's should be moved within media query tags */
   #a {
     grid-area: a;
    
