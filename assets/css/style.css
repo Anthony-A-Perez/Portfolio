@@ -1,9 +1,8 @@
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  border: 1px solid red;
+  padding: 0%;
+  margin: 0%;
 }
+
 body {
   height: 900px;
 }
@@ -32,7 +31,7 @@ h1 {
 
 .nav {
   display: flex; 
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   padding-right: 40px;
   padding-left: 40px;
@@ -44,12 +43,12 @@ h1 {
 li {
   display: flex;
   justify-content: space-around;
-  padding: px;
+  padding: 3px;
  
 }  
 
 .content{
-    width: 15%;
+    width: 20%;
    display: flex;
    flex-direction: column;
    position: absolute;
@@ -58,7 +57,7 @@ li {
     font-size: 20px;
     margin-left: 10px;
     margin-top: 70px;
-    height: 95%;
+    height: 149%;
     color: rgb(90, 167, 175);
     background-color: rgb(211, 179, 179);
     
@@ -66,6 +65,7 @@ li {
 .features {
   margin-right: 10px;
   margin-top: 60px;
+  margin-bottom: 20px;
   padding: 20px;
   clear: both;
   float: right;
@@ -76,16 +76,16 @@ li {
 }
 
 .text {
+  padding: 5px;
     margin-bottom: 10px;
-    
+    border: 3px solid  rgb(90, 167, 175);
 }
 
 .examples {
   background-color:rgb(90, 167, 175);
   display: grid;
   width: 100%;
-  height: 940px;
-
+  height: 940px
   margin-bottom: 10px;
 }
 
@@ -134,7 +134,7 @@ background-color: rgb(223, 107, 107);
 height: 100%;
    
   }
-  
+  /* grid id's should be moved within media query tags
   #a {
     grid-area: a;
    
@@ -163,11 +163,13 @@ height: 100%;
     border: 5px solid palevioletred;
 
   }
-  figcaption {
+  #avatar {
+
+    height: 50px;
    
   }
 
-
+/* viewport rendering */
   
  @media screen and (min-width: 700px){
   .features {
@@ -192,10 +194,10 @@ height: 100%;
   }
   .content {
  
-    width: 15%;
+    width: 20%;
     margin-left: 10;
-    flex-shrink: 10%;
-    height: 100%;
+    
+    height: 113%;
  
    }
 
